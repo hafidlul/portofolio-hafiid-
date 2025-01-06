@@ -1,0 +1,138 @@
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Menggunakan font yang lebih modern */
+    line-height: 1.6;
+    color: #444; /* Warna teks yang lebih gelap */
+    background-color: #e9ecef; /* Warna latar belakang yang lebih cerah */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 15px; /* Sudut yang lebih halus */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Bayangan yang lebih dramatis */
+}
+
+/* Sidebar Styles */
+
+.sidebar {
+    float: left;
+    width: 250px;
+    padding: 20px;
+    background-color: #343a40; /* Warna gelap untuk sidebar */
+    color: #ffffff;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border-radius: 15px; /* Sudut yang lebih halus */
+    transition: width 0.3s; /* Transisi untuk sidebar */
+}
+
+.sidebar:hover {
+    width: 300px; /* Efek hover pada sidebar */
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center; /* Rata tengah judul */
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    margin-bottom: 15px;
+}
+
+.sidebar a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    display: block; /* Membuat seluruh area link dapat diklik */
+    border-radius: 5px; /* Sudut yang lebih halus */
+    transition: background-color 0.3s ease, transform 0.2s; /* Transisi yang halus */
+}
+
+.sidebar a:hover {
+    background-color: #495057; /* Efek hover yang lebih menarik */
+    transform: translateX(5px); /* Efek geser saat hover */
+}
+
+/* Main Content Styles */
+
+.main-content {
+    margin-left: 270px; /* Menyesuaikan margin untuk sidebar yang lebih lebar */
+    padding: 20px;
+}
+
+.main-content h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #496b09; /* Warna judul yang cerah */
+}
+
+/* Blog Post Styles */
+
+.blog-post {
+    background-color: #f8f9fa; /* Warna latar belakang postingan */
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #dee2e6; /* Border yang lebih halus */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s; /* Transisi saat hover */
+}
+
+.blog-post:hover {
+    transform: translateY(-5px); /* Efek angkat saat hover */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); /* Bayangan lebih dalam saat hover */
+}
+
+.blog-post h2 {
+    margin-bottom: 10px;
+    color: #496b09; /* Warna judul blog yang lebih cerah */
+}
+
+.blog-info {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #dee2e6;
+}
+
+.views, .comments {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* Tombol Tambah Postingan Styles */
+
+button {
+    background-color: #191b1b; /* Warna biru cerah untuk tombol */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s; /* Transisi yang lebih halus */
+}
+
+button:hover {
+    background-color: #0056b3; /* Warna biru lebih gelap saat hover */
+}
+
+button:

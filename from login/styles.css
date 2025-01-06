@@ -1,0 +1,137 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #1d0101f1, #350202b0);
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 900px;
+    height: 500px;
+    background-color: #a6afab;
+    border-radius: 15px;
+    box-shadow: 0 15px 25px rgba(14, 182, 132, 0.384);
+    overflow: hidden;
+}
+
+.image-container {
+    width: 100%;
+    overflow: hidden;
+    display: none;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.login-container {
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-header h2 {
+    color: #121312;
+    margin-bottom: 10px;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.login-header p {
+    font-size: 16px;
+    color: #121414;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    outline: none;
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+.input-group label {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #363535;
+    font-size: 16px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.input-group input:focus, .input-group input:not(:placeholder-shown) {
+    border-bottom-color: #161818;
+}
+
+.input-group input:focus + label, .input-group input:not(:placeholder-shown) + label {
+    top: -10px;
+    color: #151616;
+    font-size: 12px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #353b365e;
+    color: rgb(41, 14, 4);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #01181a;
+}
+
+.additional-links {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.additional-links a {
+    color: #272b29;
+    text-decoration: none;
+}
+
+.additional-links a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+    .image-container {
+        display: block;
+    }
+    .login-container {
+        width: 50%;
+    }
+}
